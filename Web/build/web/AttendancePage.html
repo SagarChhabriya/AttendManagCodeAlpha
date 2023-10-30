@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <!--This web-page is designed to show the Attendance page of the Students. When the Refresh button's event is handled it calls the 'Attendance.java' Servlet 
+        which defines another web-page which takes the input status of the check boxes of the Attendance column.--> 
+<head>
+    <title>Attendance | Attendance Management System</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #95CEEB, #f0f0f0);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background-color: #37474F;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        nav {
+            background-color: #37474F;
+            text-align: center;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        li a:hover {
+            color: #87CEEB;
+        }
+
+        #Homepage {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 70%;
+            margin-top: 40px;
+        }
+
+        #Homepage h2 {
+            font-size: 24px;
+            color: #37474F;
+        }
+
+        #Homepage p {
+            font-size: 32px;
+            color: #555;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        td, th {
+            border: 2px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Attendance Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AddStudent.html">Add Student</a></li>
+            <li><a href="AttendancePage.html">Attendance</a></li>
+        </ul>
+    </nav>
+
+    <div id="Homepage">
+        <h2>Attendance Page</h2>
+    </div>
+
+    <!-- Add a form for the Refresh button and the get method calls the doGet method of the Attendance.java Servlet -->
+    <form action="/Web/Attendance" method="get" style="position: absolute; top: 10px; right: 10px;">
+        <input type="submit" value="Refresh" style="background-color: #008CBA; color: white; padding: 10px 15px; border: none; cursor: pointer;">
+    </form>
+
+    <table>
+        <tr>
+            <th style="width:5%">ID Number</th>
+            <th style="width:25%">First Name</th>
+            <th style="width:25%">Last Name</th>
+            <th style="width:25%">Department</th>
+            <th style="width:20%">Attendance</th>
+        </tr>
+    </table>
+</body>
+
+</html>

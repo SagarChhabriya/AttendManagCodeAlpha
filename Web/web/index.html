@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--This is the index file. This is the base file from which project starts and it links to the other web-pages and SERVLETS -->
+<html>
+
+<head>
+    <title> Home | Attendance Management System  </title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #95CEEB, #f0f0f0);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items at the top of the page */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background-color: #37474F;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            
+        }
+
+        nav {
+            background-color: #37474F;
+            text-align: center;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        li a:hover {
+            color: #87CEEB;
+        }
+
+        #Homepage {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px; 
+            /*//5-15//*/
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 70%;/*50-70*/
+            margin-top: 160px;
+            color: #37474F;
+             box-shadow: 10px 10px 5px lightblue;
+             
+        }
+
+        #Homepage h2 {
+            font-size: 24px;
+            
+        }
+
+        #Homepage p {
+            font-size: 32px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Attendance Management System</h1>
+    </header>
+
+    <nav>
+        <ul>
+             <!--Link to the other web-pages in the nav-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AddStudent.html">Add Student</a></li>
+            <li><a href="AttendancePage.html">Attendance</a></li>
+        </ul>
+    </nav>
+
+    <div id="Homepage">
+         <!--Home page's welcome div-->
+        <h2>Welcome to the Home Page</h2>
+        <p>This is the home page of the Attendance Management System.</p>
+    </div>
+</body>
+
+</html>

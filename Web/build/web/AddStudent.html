@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<!--        This page is desgined to add the students. This web-page makes the project dynamic. It Links to other web-pages and the 
+        Register button is designed to handle the on-click event. When the event is occured it calls the 'Registration.java' servlet 
+        which is resposible to store the record in the database by the JDBC connection and the CORE JAVA's implementation using
+        the doPost method.-->
+<head>
+    <title>Add Student | Attendance Management System </title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #95CEEB, #f0f0f0);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items at the top of the page */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background-color: #37474F;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            
+        }
+
+        nav {
+            background-color: #37474F;
+            text-align: center;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        li a:hover {
+            color: #87CEEB;
+        }
+
+        
+        .login-container {
+            background-color: #fff; /* White container background */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 20px;
+            width: 40%; /* Take the half width of the page */
+        }
+
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #37474F; /* Dark blue button background */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2b383d; /* Slightly darker blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Attendance Management System</h1>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AddStudent.html">Add Student</a></li>
+            <li><a href="AttendancePage.html">Attendance</a></li>
+        </ul>
+    </nav>
+    
+    <div class="login-container">
+        <h2>Add Student</h2>
+            <!--Links to the Resgistration servlet of the Web project by the post i.e., the doPost-->
+        <form name="f1" method="post" action="/Web/Registration">
+            <table>
+                <tr>
+                    <!--Input fields--> 
+                    <td><label>ID: </label></td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td><label>First Name: </label></td>
+                    <td><input type="text" name="fn"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name: </label></td>
+                    <td><input type="text" name="ln"></td>
+                </tr>
+                <tr>
+                    <td><label>Department: </label></td>
+                    <td><input type="text" name="dept"></td>
+                </tr>
+                <tr>
+                        <!--The Register button, of submit type to perform the on-click event-->
+                    <td><input type="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
+
