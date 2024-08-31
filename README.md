@@ -1,3 +1,1 @@
-The Attendance Management System is a web application that I created during my virtual internshipt @CodeAlpha as a third task in which I used Java Networking, Java Swing,
-Java Regex, Java AWT, SQL, Java Jakarta, HTML, CSS, Database: Derby, IDE: Netbeans. It can add student, remove student and make the attendance of the students that is the Attendance
-Management web application is capable of performing CRUD operations.
+The Attendance Management System is a robust web application I developed using a combination of Java technologies and web development tools. This system leverages Java Networking, Java Swing, Java Regex, Java AWT, and SQL, along with HTML and CSS for the frontend. Built with Derby as the database and NetBeans as the IDE, the application allows for comprehensive CRUD (Create, Read, Update, Delete) operations. It efficiently manages student records by enabling additions, removals, and tracking attendance.
